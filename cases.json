@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "purpose": "Clear billing question",
+    "input": "How do I update my payment method or credit card on my subscription?",
+    "expected_categories": ["billing"]
+  },
+  {
+    "id": 2,
+    "purpose": "Clear technical support question",
+    "input": "The application crashes immediately with code 500 when I upload a file.",
+    "expected_categories": ["technical_support"]
+  },
+  {
+    "id": 3,
+    "purpose": "Clear account access question",
+    "input": "I am locked out of my account and my two-factor authentication reset email is not arriving.",
+    "expected_categories": ["account_access"]
+  },
+  {
+    "id": 4,
+    "purpose": "Ambiguous case accepting two answers",
+    "input": "I was billed twice for my plan after receiving an authorization error during account login.",
+    "expected_categories": ["billing", "technical_support"]
+  },
+  {
+    "id": 5,
+    "purpose": "Out of domain inquiry that must produce unknown",
+    "input": "What is the speed of light in a vacuum and who won the 1998 World Cup?",
+    "expected_categories": ["unknown"]
+  }
+]
